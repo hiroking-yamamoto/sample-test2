@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test2</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsible.css" media="screen and (max-width:900px)">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+    <img class="logo" src="logo.png" alt="logo">
+    <nav>
+      <!-- 通常のメニュー -->
+      <ul class="ulmain pcmenu">
+        <li class="mainmenu"><a href="#"><div class="linkbottom">ホーム<div>HOME</div></div></a></li>
+        <li class="mainmenu"><a href="company.html"><div class="linkbottom">会社概要<div>COMPANY</div></div></a></li>
+        <li class="mainmenu"><a href="service.html"><div class="linkbottom">サービス<div>SERVICE</div></div></a></li>
+        <li class="mainmenu"><a href="recruite.html"><div class="linkbottom">採用情報<div>RECRUIT</div></div></a></li>
+        <li class="mainmenu"><a href="link.html"><div class="linkbottom">リンク<div>LINK</div></div></a></li>
+        <li class="nowpage"><a href="contact.html"><div class="linkbottom">お問い合わせ<div>CONTACT</div></div></a></li>
+      </ul>
+
+      <!-- レスポンシブ対応メニュー -->
+      <div class="responsiblemenu">
+        <input type="checkbox"  id="menu-btn-check">
+        <label for="menu-btn-check" class="menu-btn"></label>
+        <div class="menucontent">
+          <ul>
+            <li>
+              <a href="index.html">
+                <div class="res-menu-title-L">ホーム</div>
+                <div class="res-menu-title-S">HOME</div>
+              </a>
+            </li>
+            <li>
+              <a href="company.html">
+                <div class="res-menu-title-L">会社概要</div>
+                <div class="res-menu-title-S">COMPANY</div>
+              </a>
+            </li>
+            <li>
+              <a href="service.html">
+                <div class="res-menu-title-L">サービス</div>
+                <div class="res-menu-title-S">SERVICE</div>
+              </a>
+            </li>
+            <li>
+              <a href="recruite.html">
+                <div class="res-menu-title-L">採用情報</div>
+                <div class="res-menu-title-S">RECRUIT</div>
+              </a>
+            </li>
+            <li>
+              <a href="link.html">
+                <div class="res-menu-title-L">リンク</div>
+                <div class="res-menu-title-S">LINK</div>
+              </a>
+            </li>
+            <li>
+              <a href="contact.html">
+                <div class="res-menu-title-L">お問い合わせ</div>
+                <div class="res-menu-title-S">CONTACT</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> 
+    </header>
+
+    <main class="main">
+      <h1><span class="vline"></span>お問い合わせ</h1>
+      <div class="pl40">
+        当ページと同じ３項目のお問い合わせフォーム（自動フォーム試用版）を簡単に使えるようにセットしています。<br>
+        <span class="red">※当ページ（contact.html）はフォームの見本ページです。実際の自動フォームには使いませんのでご注意下さい。</span>
+        
+        <h3>■自動フォームを使う場合（※編集に入る前にご確認下さい）</h3>
+        あなたのメールアドレス設定と、簡単な編集だけで使えます。<a href="https://template-party.com/file/formgen_manual_set2.html" target="_blank" rel="noopener">こちらのマニュアルをご覧下さい。</a>
+        <h3>■自動フォームを使わない場合</h3>
+        テンプレートに梱包されている「form.html」「confirm.html」「finish.html」の3枚のファイルを削除して下さい。
+      </div>
+
+      <form action="#" method="post">
+        <div class="margin30">
+          <table class="midashi">
+            <tr>
+              <th>お名前※</th>
+              <td>
+                <input type="text" name="name" required>
+              </td>
+            </tr>
+            <tr>
+              <th>メールアドレス※</th>
+              <td>
+                <input type="email" name="mail" required>
+              </td>
+            </tr>
+            <tr>
+              <th>お問い合わせ詳細※</th>
+              <td>
+                <textarea name="contact" cols="70" rows="10" required></textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div style="text-align:center;">
+          <input type="submit" value="内容を確認する" class="contactbutton">
+        </div>
+      </form>
+    </main>
+        
+    <aside class="side">
+
+      <div class="sidemenu">
+        <div class="sidemenutitle">
+          Menu
+        </div>
+        <ul class="sidemenulist">
+          <li><a class="sidemenulink" href="#">メニュー</a></li>
+          <li><a class="sidemenulink" href="#">メニュー</a></li>
+          <li><a class="sidemenulink" href="#">メニュー</a></li>
+        </ul>
+      </div>
+
+      <div class="sidemenu2">
+        <div class="sidemenutitle2">
+          Menu
+        </div>
+        <ul class="sidemenulist">
+          <li><a class="sidemenulink" href="#">メニュー</a></li>
+          <li><a class="sidemenulink" href="#">メニュー</a></li>
+          <li><a class="sidemenulink" href="#">メニュー</a></li>                    
+        </ul>
+      </div>
+
+      <div class="sidemenu">
+        <div class="sidemenutitle">
+          製品情報
+        </div>
+        <ul class="sidemenulist">
+          <li><a class="sidemenulink" href="#"><img src="sample1.jpg" alt="test2"><p><span style="font-size: 12px; color:#0E36CA">製品情報</span><br>簡単な説明をここに入れます。</p></a></li>
+          <li><a class="sidemenulink" href="#"><img src="sample1.jpg" alt="test2"><p><span style="font-size: 12px; color:#0E36CA">製品情報</span><br>簡単な説明をここに入れます。</p></a></li>
+          <li><a class="sidemenulink" href="#"><img src="sample1.jpg" alt="test2"><p><span style="font-size: 12px; color:#0E36CA">製品情報</span><br>簡単な説明をここに入れます。</p></a></li>
+        </ul>
+      </div>
+
+      <div class="sidemenu2">
+        <div class="sidemenutitle2">
+          製品情報
+        </div>
+        <ul class="sidemenulist">
+          <li><a class="sidemenulink" href="#"><img src="sample1.jpg" alt="test2"><p><span style="font-size: 12px; color:#0E36CA">製品情報</span><br>簡単な説明をここに入れます。</p></a></li>
+          <li><a class="sidemenulink" href="#"><img src="sample1.jpg" alt="test2"><p><span style="font-size: 12px; color:#0E36CA">製品情報</span><br>簡単な説明をここに入れます。</p></a></li>
+          <li><a class="sidemenulink" href="#"><img src="sample1.jpg" alt="test2"><p><span style="font-size: 12px; color:#0E36CA">製品情報</span><br>簡単な説明をここに入れます。</p></a></li>
+        </ul>
+      </div>
+
+      <div class="sidemenu">
+        <div class="sidemenutitle">
+          運営
+        </div>
+        <div style="text-align: center;">
+          <b>株式会社SAMPLE COMPANY</b><br>
+          <p style="font-size: 12px;">東京都XX区XXXXビル3F<br>
+          TEL:03-0000-0000<br>
+          (AM9:00〜PM5:00 土日祝休み)</p>
+        </div>
+      </div>
+    </aside>
+        
+    <footer class="footer">
+      Copyright&copy; <a href="index.html">SAMPLE COMPANY</a> All Rights Reserved.<br>
+      《Web Design:<a href="https://template-party.com/" target="_blank" rel="noopener">Template-Party</a>》
+    </footer>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+/* カラムを１つにする */
+
+.main{
+  float: none;
+  width:100%;
+}
+
+.side {
+  float: none;
+  width: 100%;
+}
+
+/* メニューの変形 */
+
+.pcmenu {
+  display: none;
+}
+
+.responsiblemenu {
+  display: block;
+  float: right;
+  width: 100%;
+  position: absolute;
+  z-index:100;
+}
+
+#menu-btn-check {
+  display: none;
+}
+
+.menu-btn {
+  position:absolute;
+  top: -80px;
+  right: 20px;
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+  border: .2px solid;
+  background-image: url('icon_menu.png');
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+#menu-btn-check:checked  ~ .menu-btn {
+  background-position: bottom;
+}
+
+.menucontent {
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 80;
+  background-color: rgba(0,0,0,0.7);
+  display: none;
+}
+
+#menu-btn-check:checked ~ .menucontent {
+  display: block;
+}
+
+.menucontent li{
+  border-bottom:1px solid #fff; 
+  list-style: none;
+}
+
+.menucontent ul li a {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 10px 0 10px 20px ;
+}
+
+.menucontent ul li a div {
+  padding: 5px 0 5px;
+}
+
+.res-menu-title-L {
+  color: #fff;
+  font-size: 20px;
+}
+
+.res-menu-title-S {
+  color: #fff;
+  font-size: 12px;
+}
